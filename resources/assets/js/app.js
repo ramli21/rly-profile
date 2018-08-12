@@ -7,6 +7,8 @@
 
 require('./bootstrap');
 
+window.axios = require('axios');
+
 /**
  * Next, we will create a fresh React component instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -14,4 +16,5 @@ require('./bootstrap');
  */
 
 require('./components/Example');
-require('./components/User');
+require('./components/users/User');
+require('./components/users/Create');

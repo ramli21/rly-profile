@@ -1,10 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers;
 
-use App\User;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
@@ -15,9 +13,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::all();
-
-        return response()->json($users);
+        return view("users/users");
     }
 
     /**
@@ -27,7 +23,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view("users/create");
     }
 
     /**
@@ -38,15 +34,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-      $user = new User();
-
-      $user->name = $request->get('name');
-      $user->email = $request->get('email');
-      $user->password = bcrypt($request->get('password'));
-
-      $user->save();
-
-      return response()->json($user);
+        //
     }
 
     /**
@@ -91,10 +79,6 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        $user = User::find($id);
-
-        $user->delete();
-
-        return response()->json('User deleted successfully');
+        //
     }
 }
