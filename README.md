@@ -38,5 +38,5 @@ npm run watch
 ## Built With
 
 * [Laravel](https://laravel.com/docs/5.6/) - The web framework used (5.6.*)
-* [ReactJS](https://reactjs.org/) - The (16.2.0)
+* [ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces (16.2.0)
 * [Bootstrap](https://getbootstrap.com/) - The web frontend framework used (4.0.0)
