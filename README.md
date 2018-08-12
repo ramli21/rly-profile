@@ -22,6 +22,19 @@ and then run the migration to build the tables
 php artisan migrate
 ```
 
+run the app server
+
+```
+php artisan serve
+```
+
+to build the assets precompile, open a new tab in the console and then run this command
+
+```
+npm run watch
+```
+
+
 ## Built With
 
 * [Laravel](https://laravel.com/docs/5.6/) - The web framework used (5.6.*)
